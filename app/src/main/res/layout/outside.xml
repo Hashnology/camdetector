@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_tips_tricks"
+        >
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outside there might be CCTV"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_16sdp" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textView"
+            android:padding="@dimen/_10sdp"
+            android:layout_below="@+id/tvInfo"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip # 1  Outside"
+                android:textColor="@color/color_heading"
+                android:textSize="@dimen/_16sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/outside_tip"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/color_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip # 2 Public Camera "
+                android:textColor="@color/color_heading"
+                android:textSize="@dimen/_16sdp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/public_camera"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/color_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_above="@+id/adView"
+            android:background="@drawable/green_button"
+            android:text="I got it"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorStatusBar"
+    >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/ivEye"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/black_eye"
+            />
+
+        <ImageView
+            android:id="@+id/ivBody"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:src="@drawable/body"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:layout_marginRight="@dimen/_40sdp"
+            android:layout_below="@+id/ivEye"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBody"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_20sdp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#4b4b4b"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copyrights@karimapps.com"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:textSize="@dimen/_20sdp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
